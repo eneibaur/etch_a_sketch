@@ -5,4 +5,12 @@ div{
 
 .page_main {
     display: flex;
+
+}
+
+.etch {
+    display: flex;
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
 }
