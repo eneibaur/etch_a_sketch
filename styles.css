@@ -10,6 +10,7 @@ div{
 
 .etch {
     display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
     width: 400px;
     height: 400px;
