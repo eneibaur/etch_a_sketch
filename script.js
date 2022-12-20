@@ -23,9 +23,11 @@ for (let i = 1; i <= (drawSize * drawSize); i++) {
   drawSpace.appendChild(cell);
 }
 
-// const pixels = document.querySelectorAll('pixel');
-// pixels.forEach(('cell') => {
-//     cell.addEventListener("click", () => {
-//       alert("You clicked something!");
-//     })
-// });
+const pixels = document.querySelectorAll('.pixel');
+
+pixels.forEach((pixel) => {
+
+    pixel.addEventListener('click', () => {
+      alert("You clicked something!");
+    })
+});
