@@ -1,3 +1,2 @@
-h1 {
-    color: blu
-}
+const testH1 = document.querySelector(".test")
+testH1.style.color = "blue";
