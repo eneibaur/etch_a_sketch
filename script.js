@@ -2,11 +2,22 @@
 // testH1.style.color = "blue";
 
 const drawSpace = document.querySelector(".etch");
-let startingSize = 20;
+let drawSize = 32;
 
+drawSpace.style.gridTemplateRows = `repeat(${drawSize})`;
+drawSpace.style.gridTemplateColumns = `repeat(${drawSize})`;
 
-for (let i = 0; i < (startingSize * startingSize); i++){
-    const pixel = document.createElement('div');
-    pixel.classList.add('pixel')
-    drawSpace.appendChild(pixel);
+let row = 1;
+let column = 1;
+for (let i = 1; i <= (drawSize * drawSize); i++) {
+  let cell = document.createElement('div');
+  cell.style.border = '1px solid black';
+  cell.style.gridRow = row;
+  cell.style.gridColumn = column;
+  column += 1;
+  if (column === drawSize + 1) {
+    row += 1;
+    column = 1;
+  }
+  drawSpace.appendChild(cell);
 }

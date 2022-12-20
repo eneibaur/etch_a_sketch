@@ -9,8 +9,7 @@ div{
 }
 
 .etch {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     box-sizing: border-box;
     width: 400px;
     height: 400px;
