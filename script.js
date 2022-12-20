@@ -23,10 +23,9 @@ for (let i = 1; i <= (drawSize * drawSize); i++) {
   drawSpace.appendChild(cell);
 }
 
+// Changes bg to black when moused over
 const pixels = document.querySelectorAll('.pixel');
-
 pixels.forEach((pixel) => {
-
     pixel.addEventListener('mouseenter', () => {
       pixel.style.backgroundColor = "black"
     });
