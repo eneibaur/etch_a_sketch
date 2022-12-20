@@ -19,7 +19,7 @@ for (let i = 1; i <= (drawSize * drawSize); i++) {
   if (column === drawSize + 1) {
     row += 1;
     column = 1;
-  }
+  };
   drawSpace.appendChild(cell);
 }
 
@@ -30,3 +30,8 @@ pixels.forEach((pixel) => {
       pixel.style.backgroundColor = "black"
     });
 });
+
+// Overwrites grid size based on user input
+// create button labeled "grid size"
+// on click, button prompts user for number less than 100
+// user input is then saved into "drawsize" Variable
