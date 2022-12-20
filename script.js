@@ -28,6 +28,6 @@ const pixels = document.querySelectorAll('.pixel');
 pixels.forEach((pixel) => {
 
     pixel.addEventListener('click', () => {
-      alert("You clicked something!");
-    })
+      pixel.style.backgroundColor = "black"
+    });
 });
