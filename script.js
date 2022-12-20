@@ -27,7 +27,7 @@ const pixels = document.querySelectorAll('.pixel');
 
 pixels.forEach((pixel) => {
 
-    pixel.addEventListener('click', () => {
+    pixel.addEventListener('mouseenter', () => {
       pixel.style.backgroundColor = "black"
     });
 });
