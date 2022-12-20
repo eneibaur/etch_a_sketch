@@ -2,7 +2,7 @@
 // testH1.style.color = "blue";
 
 const drawSpace = document.querySelector(".etch");
-let drawSize = 32;
+let drawSize = 100;
 
 drawSpace.style.gridTemplateRows = `repeat(${drawSize})`;
 drawSpace.style.gridTemplateColumns = `repeat(${drawSize})`;
