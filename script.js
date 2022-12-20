@@ -1,12 +1,13 @@
 // const testH1 = document.querySelector(".test")
 // testH1.style.color = "blue";
 
+// Sets size for grid
 const drawSpace = document.querySelector(".etch");
-let drawSize = 100;
-
+let drawSize = 16;
 drawSpace.style.gridTemplateRows = `repeat(${drawSize})`;
 drawSpace.style.gridTemplateColumns = `repeat(${drawSize})`;
 
+// Creates grid for etch-a-sketch
 let row = 1;
 let column = 1;
 for (let i = 1; i <= (drawSize * drawSize); i++) {
@@ -21,3 +22,10 @@ for (let i = 1; i <= (drawSize * drawSize); i++) {
   }
   drawSpace.appendChild(cell);
 }
+
+// const pixels = document.querySelectorAll('pixel');
+// pixels.forEach(('cell') => {
+//     cell.addEventListener("click", () => {
+//       alert("You clicked something!");
+//     })
+// });
