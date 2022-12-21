@@ -27,18 +27,15 @@ function createGrid(size) {
   };
 };
 
-// Make initial grid
-let drawSize = 16;
-setGridSize(drawSize);
-createGrid(drawSize);
-
 // Changes bg to black when moused over
-const pixels = document.querySelectorAll('.pixel');
-pixels.forEach((pixel) => {
-    pixel.addEventListener('mouseenter', () => {
-      pixel.style.backgroundColor = "black"
-    });
-});
+function activePixels() {
+  const pixels = document.querySelectorAll('.pixel');
+  pixels.forEach((pixel) => {
+      pixel.addEventListener('mouseenter', () => {
+        pixel.style.backgroundColor = "black"
+      });
+  });
+}
 
 // Overwrites grid size based on user input
 // create button labeled "grid size"
@@ -55,10 +52,11 @@ userResize.addEventListener('click', () => {
   resized = gridResize();
   setGridSize(resized);
   createGrid(resized);
-  // pixels.forEach((pixel) => {
-  //     pixel.style.backgroundColor = "white";
-  //     pixel.addEventListener('mouseenter', () => {
-  //       pixel.style.backgroundColor = "black"
-  //     });
-  // });
+  activePixels();
 });
+
+// Make initial grid
+let drawSize = 16;
+setGridSize(drawSize);
+createGrid(drawSize);
+activePixels();
