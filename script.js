@@ -28,9 +28,9 @@ function createGrid(size) {
 };
 
 // Make initial grid
-let drawSize = 16;
-setGridSize(drawSize);
-createGrid(drawSize);
+// let drawSize = 16;
+// setGridSize(drawSize);
+// createGrid(drawSize);
 
 // Changes bg to black when moused over
 const pixels = document.querySelectorAll('.pixel');
@@ -50,6 +50,7 @@ function gridResize() {
   return size;
 };
 userResize.addEventListener('click', () => {
-  resized = gridResize();
+  resized = 60;
+  setGridSize(resized);
   createGrid(resized);
 });
