@@ -49,7 +49,12 @@ function activePixels() {
   pixels.forEach((pixel) => {
       pixel.addEventListener('mouseenter', () => {
         let currentColor = colorPicker.value;
-        pixel.style.backgroundColor = currentColor;
+        if (rainbow.textContent == "Rainbow ON"){
+          currentColor = "black";
+          pixel.style.backgroundColor = currentColor;
+        } else {
+          pixel.style.backgroundColor = currentColor;
+        };
       });
   });
 }
