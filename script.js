@@ -80,3 +80,7 @@ let initialSize = 16;
 setGridSize(initialSize);
 createGrid(initialSize);
 activePixels();
+
+// Functions remaining to add:
+// Random BRIGHT Color generated from RAINBOW Button
+// Put in Grid size limit (and user error catch)
