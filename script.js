@@ -57,7 +57,7 @@ userResize.addEventListener('click', () => {
 });
 
 // Make initial grid
-let drawSize = 16;
-setGridSize(drawSize);
-createGrid(drawSize);
+let initialSize = 16;
+setGridSize(initialSize);
+createGrid(initialSize);
 activePixels();

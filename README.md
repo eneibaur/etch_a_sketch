@@ -17,3 +17,7 @@ First, I will attempt to build the grid in flexbox, using (assumedly) a loop to 
 as expected, I will want to add event listeners to each of the squares listening for an event, or sequence of events, telling them
 to change their style to black (or perhaps a javascript color variable?) on execution of the event. At that point, most of the
 functionality of the website should be in place, and further experimentation is building upon those features.
+
+
+12/21/2022 - Very basic functionality is in place. From here, I'm looking at adding a color option, starting with the "rainbow" button, then a color
+palate or color wheel of some kind. Once those are in, I will look at the next feature.
