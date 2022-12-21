@@ -54,10 +54,10 @@ userResize.addEventListener('click', () => {
   resized = gridResize();
   setGridSize(resized);
   createGrid(resized);
-  pixels.forEach((pixel) => {
-    pixel.style.backgroundColor = "white";
-    pixel.addEventListener('mouseenter', () => {
-      pixel.style.backgroundColor = "black"
-    });
-});
+  // pixels.forEach((pixel) => {
+  //     pixel.style.backgroundColor = "white";
+  //     pixel.addEventListener('mouseenter', () => {
+  //       pixel.style.backgroundColor = "black"
+  //     });
+  // });
 });
