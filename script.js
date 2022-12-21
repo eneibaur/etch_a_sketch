@@ -28,9 +28,9 @@ function createGrid(size) {
 };
 
 // Make initial grid
-// let drawSize = 16;
-// setGridSize(drawSize);
-// createGrid(drawSize);
+let drawSize = 16;
+setGridSize(drawSize);
+createGrid(drawSize);
 
 // Changes bg to black when moused over
 const pixels = document.querySelectorAll('.pixel');
@@ -47,10 +47,17 @@ pixels.forEach((pixel) => {
 const userResize = document.querySelector(".size");
 function gridResize() {
   let size = prompt("Specify pixel density (max:100):");
-  return size;
+  return parseInt(size);
 };
+
 userResize.addEventListener('click', () => {
-  resized = 60;
+  resized = gridResize();
   setGridSize(resized);
   createGrid(resized);
+  pixels.forEach((pixel) => {
+    pixel.style.backgroundColor = "white";
+    pixel.addEventListener('mouseenter', () => {
+      pixel.style.backgroundColor = "black"
+    });
+});
 });
