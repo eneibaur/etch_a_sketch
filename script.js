@@ -35,3 +35,11 @@ pixels.forEach((pixel) => {
 // create button labeled "grid size"
 // on click, button prompts user for number less than 100
 // user input is then saved into "drawsize" Variable
+const userResize = document.querySelector(".size");
+function gridResize() {
+  let size = prompt("Specify pixel density (max:100):");
+  return size;
+};
+userResize.addEventListener('click' () => {
+  drawSize = gridResize();
+})
