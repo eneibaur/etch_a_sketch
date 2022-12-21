@@ -20,4 +20,4 @@ functionality of the website should be in place, and further experimentation is 
 
 
 12/21/2022 - Very basic functionality is in place. From here, I'm looking at adding a color option, starting with the "rainbow" button, then a color
-palate or color wheel of some kind. Once those are in, I will look at the next feature.
+palate or color wheel of some kind. Once those are in, I will look at the next feature. EDIT: Color picker added. Rainbow function next.
