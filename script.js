@@ -51,6 +51,7 @@ function gridResize() {
 };
 
 userResize.addEventListener('click', () => {
+  drawSpace.innerHTML = "";
   resized = gridResize();
   setGridSize(resized);
   createGrid(resized);
