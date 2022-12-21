@@ -4,10 +4,13 @@ const rainbow = document.querySelector(".rainbow");
 
 let drawColor = colorPicker.value;
 
+rainbow.textContent = "Rainbow ON";
+
+// Changes content of Rainbow Button
 function buttonSwitch() {
-  if(rainbow.textContent == "Rainbow OFF" ) {
-    rainbow.textContent = "Rainbow ON";
-  }
+  // if(rainbow.textContent == "Rainbow OFF" ) {
+  //   rainbow.textContent = "Rainbow ON";
+  // }
   if(rainbow.textContent == "Rainbow ON" ) {
     rainbow.textContent = "Rainbow OFF";
   };
