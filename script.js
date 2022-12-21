@@ -1,9 +1,23 @@
 const drawSpace = document.querySelector(".etch");
 const colorPicker = document.querySelector(".userColor");
-const Rainbow = document.querySelector(".rainbow");
+const rainbow = document.querySelector(".rainbow");
 
 let drawColor = colorPicker.value;
-console.log(drawColor);
+
+function buttonSwitch() {
+  if(rainbow.textContent == "Rainbow OFF" ) {
+    rainbow.textContent = "Rainbow ON";
+  }
+  if(rainbow.textContent == "Rainbow ON" ) {
+    rainbow.textContent = "Rainbow OFF";
+  };
+};
+
+// Button toggle for RAINBOW Function
+rainbow.addEventListener('click', () => {
+  console.log(rainbow.textContent)
+  buttonSwitch() 
+});
 
 // Sets size for grid
 function setGridSize(size) {
