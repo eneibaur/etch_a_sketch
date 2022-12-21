@@ -8,20 +8,23 @@ drawSpace.style.gridTemplateRows = `repeat(${drawSize})`;
 drawSpace.style.gridTemplateColumns = `repeat(${drawSize})`;
 
 // Creates grid for etch-a-sketch
-let row = 1;
-let column = 1;
-for (let i = 1; i <= (drawSize * drawSize); i++) {
-  let cell = document.createElement('div');
-  cell.style.gridRow = row;
-  cell.style.gridColumn = column;
-  cell.classList.add('pixel');
-  column += 1;
-  if (column === drawSize + 1) {
-    row += 1;
-    column = 1;
+function createGrid(size) {
+  let row = 1;
+  let column = 1;
+  for (let i = 1; i <= (size * size); i++) {
+    let cell = document.createElement('div');
+    cell.style.gridRow = row;
+    cell.style.gridColumn = column;
+    cell.classList.add('pixel');
+    column += 1;
+    if (column === size + 1) {
+      row += 1;
+      column = 1;
+    };
+    drawSpace.appendChild(cell);
   };
-  drawSpace.appendChild(cell);
-}
+};
+// createGrid(drawSize);
 
 // Changes bg to black when moused over
 const pixels = document.querySelectorAll('.pixel');
@@ -40,6 +43,7 @@ function gridResize() {
   let size = prompt("Specify pixel density (max:100):");
   return size;
 };
-userResize.addEventListener('click' () => {
-  drawSize = gridResize();
-})
+userResize.addEventListener('click', () => {
+  resized = gridResize();
+  createGrid(resized);
+});
