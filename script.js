@@ -47,7 +47,8 @@ function gridResize() {
   return parseInt(size);
 };
 
-userResize.addEventListener('click', () => {
+userResize.addEventListener('click', () => { 
+  // Deletes previous grid
   drawSpace.innerHTML = "";
   resized = gridResize();
   setGridSize(resized);
