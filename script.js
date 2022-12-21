@@ -1,11 +1,13 @@
 // const testH1 = document.querySelector(".test")
 // testH1.style.color = "blue";
 
-// Sets size for grid
 const drawSpace = document.querySelector(".etch");
-let drawSize = 16;
-drawSpace.style.gridTemplateRows = `repeat(${drawSize})`;
-drawSpace.style.gridTemplateColumns = `repeat(${drawSize})`;
+
+// Sets size for grid
+function setGridSize(size) {
+  drawSpace.style.gridTemplateRows = `repeat(${size})`;
+  drawSpace.style.gridTemplateColumns = `repeat(${size})`;
+};
 
 // Creates grid for etch-a-sketch
 function createGrid(size) {
@@ -24,7 +26,11 @@ function createGrid(size) {
     drawSpace.appendChild(cell);
   };
 };
-// createGrid(drawSize);
+
+// Make initial grid
+let drawSize = 16;
+setGridSize(drawSize);
+createGrid(drawSize);
 
 // Changes bg to black when moused over
 const pixels = document.querySelectorAll('.pixel');
