@@ -1,7 +1,8 @@
-// const testH1 = document.querySelector(".test")
-// testH1.style.color = "blue";
-
 const drawSpace = document.querySelector(".etch");
+const colorPicker = document.querySelector(".userColor")
+
+let drawColor = colorPicker.value;
+console.log(drawColor);
 
 // Sets size for grid
 function setGridSize(size) {
@@ -32,7 +33,7 @@ function activePixels() {
   const pixels = document.querySelectorAll('.pixel');
   pixels.forEach((pixel) => {
       pixel.addEventListener('mouseenter', () => {
-        pixel.style.backgroundColor = "black"
+        pixel.style.backgroundColor = drawColor;
       });
   });
 }
