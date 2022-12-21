@@ -28,20 +28,18 @@ function createGrid(size) {
   };
 };
 
-// Changes bg to black when moused over
+// Changes bg to the selected color when moused over
 function activePixels() {
   const pixels = document.querySelectorAll('.pixel');
   pixels.forEach((pixel) => {
       pixel.addEventListener('mouseenter', () => {
-        pixel.style.backgroundColor = drawColor;
+        let currentColor = colorPicker.value;
+        pixel.style.backgroundColor = currentColor;
       });
   });
 }
 
 // Overwrites grid size based on user input
-// create button labeled "grid size"
-// on click, button prompts user for number less than 100
-// user input is then saved into "drawsize" Variable
 const userResize = document.querySelector(".size");
 function gridResize() {
   let size = prompt("Specify pixel density (max:100):");
