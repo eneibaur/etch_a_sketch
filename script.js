@@ -1,5 +1,6 @@
 const drawSpace = document.querySelector(".etch");
-const colorPicker = document.querySelector(".userColor")
+const colorPicker = document.querySelector(".userColor");
+const Rainbow = document.querySelector(".rainbow");
 
 let drawColor = colorPicker.value;
 console.log(drawColor);
