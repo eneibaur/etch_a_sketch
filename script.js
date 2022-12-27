@@ -20,7 +20,7 @@ rainbow.addEventListener('click', () => {
 
 // Generate high-value number for RGB Color model
 function getColor() {
-  return Math.floor((Math.random() * 155) +100 );
+  return Math.floor((Math.random() * 255));
 };
 
 // Sets size for grid
