@@ -8,6 +8,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(25, 25, 25);
+    color: aliceblue;
 }
 
 .page_main {
@@ -20,6 +22,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 5px;
+    background-color: rgb(35, 35, 35);
 }
 
 .toolbar > * {

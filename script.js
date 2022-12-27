@@ -3,6 +3,7 @@ const colorPicker = document.querySelector(".userColor");
 const rainbow = document.querySelector(".rainbow");
 
 let drawColor = colorPicker.value;
+let bgColor = "rgb(255, 255, 255)";
 
 // Changes content of Rainbow Button
 function buttonSwitch() {
@@ -38,6 +39,7 @@ function createGrid(size) {
     cell.style.gridRow = row;
     cell.style.gridColumn = column;
     cell.style.border = "1px solid rgba(200, 200, 200, .25)";
+    cell.style.backgroundColor = bgColor;
     cell.classList.add('pixel');
     column += 1;
     if (column === size + 1) {
