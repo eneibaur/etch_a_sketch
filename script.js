@@ -97,3 +97,4 @@ activePixels();
 // Background colorpicker: second color picker
 // BG color fill: fills all divs filled with BG color with foreground color,
 //  re-writes BG color value
+// Color picker that picks color of selected div, overwrites FG color

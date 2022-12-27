@@ -1,6 +1,8 @@
-div{
-    /* border: 1px solid red; */
-}
+/* Diagnostic Div */
+/* div{
+   border: 1px solid red;
+} */
+
 body{
     display: flex;
     flex-direction: column;
