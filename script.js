@@ -15,7 +15,6 @@ function buttonSwitch() {
 
 // Button toggle for RAINBOW Function
 rainbow.addEventListener('click', () => {
-  console.log(rainbow.textContent)
   buttonSwitch() 
 });
 
@@ -23,8 +22,6 @@ rainbow.addEventListener('click', () => {
 function getColor() {
   return Math.floor((Math.random() * 155) +100 );
 };
-
-console.log(getColor())
 
 // Sets size for grid
 function setGridSize(size) {
@@ -57,7 +54,7 @@ function activePixels() {
       pixel.addEventListener('mouseenter', () => {
         let currentColor = colorPicker.value;
         if (rainbow.textContent == "Rainbow ON"){
-          currentColor = "black";
+          currentColor = "${getColor()}";
           pixel.style.backgroundColor = currentColor;
         } else {
           pixel.style.backgroundColor = currentColor;
