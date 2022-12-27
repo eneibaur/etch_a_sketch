@@ -1,6 +1,10 @@
 div{
     border: 1px solid red;
 }
+body{
+    display: flex;
+    flex-direction: column;
+}
 
 .page_main {
     display: flex;
