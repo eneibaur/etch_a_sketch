@@ -62,8 +62,12 @@ function activePixels() {
 // Overwrites grid size based on user input
 const userResize = document.querySelector(".size");
 function gridResize() {
-  let size = prompt("Specify pixel density (max:100):");
-  return parseInt(size);
+  let tempSize = prompt("Specify pixel density (max:100):");
+  let size = parseInt(tempSize);
+  if (size > 100){
+    size = 100;
+  }
+  return (size);
 };
 
 userResize.addEventListener('click', () => { 
