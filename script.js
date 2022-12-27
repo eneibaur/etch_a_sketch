@@ -54,7 +54,7 @@ function activePixels() {
       pixel.addEventListener('mouseenter', () => {
         let currentColor = colorPicker.value;
         if (rainbow.textContent == "Rainbow ON"){
-          currentColor = "rgb(255, 100, 200)";
+          currentColor = `rgb(${getColor()}, ${getColor()}, ${getColor()})`;
           pixel.style.backgroundColor = currentColor;
         } else {
           pixel.style.backgroundColor = currentColor;
