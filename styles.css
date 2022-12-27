@@ -15,6 +15,7 @@ div{
 
 .toolbar > * {
     margin: 5px;
+    width: 100px;
 }
 
 .etch {
