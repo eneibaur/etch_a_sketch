@@ -19,6 +19,13 @@ rainbow.addEventListener('click', () => {
   buttonSwitch() 
 });
 
+// Generate high-value number for RGB Color model
+function getColor() {
+  return Math.floor((Math.random() * 155) +100 );
+};
+
+console.log(getColor())
+
 // Sets size for grid
 function setGridSize(size) {
   drawSpace.style.gridTemplateRows = `repeat(${size})`;
@@ -87,4 +94,3 @@ activePixels();
 
 // Functions remaining to add:
 // Random BRIGHT Color generated from RAINBOW Button
-// Put in Grid size limit (and user error catch)
