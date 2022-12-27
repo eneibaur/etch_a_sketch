@@ -19,7 +19,7 @@ rainbow.addEventListener('click', () => {
 });
 
 // Generate high-value number for RGB Color model
-function getColor() {
+function getColorFull() {
   return Math.floor((Math.random() * 255));
 };
 
@@ -54,7 +54,7 @@ function activePixels() {
       pixel.addEventListener('mouseenter', () => {
         let currentColor = colorPicker.value;
         if (rainbow.textContent == "Rainbow ON"){
-          currentColor = `rgb(${getColor()}, ${getColor()}, ${getColor()})`;
+          currentColor = `rgb(${getColorFull()}, ${getColorFull()}, ${getColorFull()})`;
           pixel.style.backgroundColor = currentColor;
         } else {
           pixel.style.backgroundColor = currentColor;
@@ -90,4 +90,9 @@ createGrid(initialSize);
 activePixels();
 
 // Functions remaining to add:
-// Random BRIGHT Color generated from RAINBOW Button
+
+// Optional functions:
+// "Rainbow Pastel" Button that chooses values between 100 - 255
+// Background colorpicker: second color picker
+// BG color fill: fills all divs filled with BG color with foreground color,
+//  re-writes BG color value
