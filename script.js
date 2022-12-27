@@ -37,6 +37,7 @@ function createGrid(size) {
     let cell = document.createElement('div');
     cell.style.gridRow = row;
     cell.style.gridColumn = column;
+    cell.style.border = "1px solid rgba(200, 200, 200, .25)";
     cell.classList.add('pixel');
     column += 1;
     if (column === size + 1) {
